@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link rel='stylesheet' href='./style.css' />
+        <link rel='stylesheet' href='./reset.css' />
+    </head>
+        
+    <body>
+        <form id="viagem">
+            
+            <div grid class='wrap-form-content'>
+                
+                <div grid-template-columns grid class="header-form">
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="number" id="solicitacao" name="solicitacao" />
+                        <label for="solicitacao">solicitacao</label>
+                        <img />
+                        <button class="button" >Acessar</button>
+                    </div>
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="date" valueAsNumber id="data" name="data" />
+                        <label fixed-label for="data">data</label>
+                    </div>
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="time" id="hora" name="hora" />
+                        <label fixed-label for="hora">hora</label>
+                    </div>
+                    <div class="field" select>
+                        <select type="time" id="situacao" name="situacao" >
+                                
+                            <option value="">Aprovada</option>
+                            <option value="">Encerrada</option>
+                            <option value="">Recusada</option>
+                            <option value="">Cancelada</option>
+                            <option value="">Aguardando Aprovação</option>
+                        </select>
+                        <label fixed-label for="situacao">situacao</label>
+                    </div>
+                    
+                </div>
+                <div grid-template-columns grid class="data-form">
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="viajante" name="viajante" />
+                        <label for="viajante">viajante</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="descViajante" name="descViajante" />
+                    
+                    </div>
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="gestor" name="gestor" />
+                        <label for="gestor">Gestor</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="DescGestor" name="DescGestor" />
+                    </div>
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="number" id="centroDeCusto" name="centroDeCusto" />
+                        <label for="centroDeCusto">Centro De Custo</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="DescCentroDeCusto" name="DescCentroDeCusto" />
+                    </div>
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="number" id="contaGerencial" name="contaGerencial" />
+                        <label for="contaGerencial">Conta Gerencial</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="DescContaGerencial" name="DescContaGerencial" />
+                    </div>
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="number" id="motivoDaViagem" name="motivoDaViagem" />
+                        <label for="motivoDaViagem">Motivo Da Viagem</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="text" id="DescMotivoDaViagem" name="DescMotivoDaViagem" />
+                    </div>
+                    <div class="field">
+                        <textarea placeholder=" " type="text" id="descMotivo" name="descMotivo" ></textarea>
+                        <label for="descMotivo">Descricão do Motivo</label>
+                    </div>
+                    <div class="field" select>
+                        
+                        <select type="time" id="tipoDeViagem" name="tipoDeViagem" >
+                            <option value="">Nacional</option>
+                            <option value="">Internacional</option>
+                            <option value="">Continente</option>
+                        </select>
+                        
+                        <label fixed-label for="tipoDeViagem">Tipo de Viagem</label>
+                            
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                <div grid-template-columns grid class="date-trip-form">
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="date" valueAsNumber id="dataPartida" name="dataPartida" />
+                        <label fixed-label for="dataPartida">Data Partida</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="time" id="horaPartida" name="horaPartida" />
+                    </div>
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="date" valueAsNumber id="dataChegada" name="dataChegada" />
+                        <label fixed-label for="dataChegada">Data Chegada</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="time" id="horaChegada" name="horaChegada" />
+                    </div>
+                    
+                    <div class="field">
+                        <input placeholderhide placeholder=" " autocomplete="off" type="date" valueAsNumber id="dataRetorno" name="dataRetorno" />
+                        <label fixed-label for="dataRetorno">Data Retorno</label>
+                        <input placeholderhide placeholder=" " autocomplete="off" type="time" id="horaRetorno" name="horaRetorno" />
+                    </div>
+                    
+                
+                </div>
+                
+                <div grid class="group-tabs">
+                    
+                    
+                    <!-- START GRID TAB 001 -->
+                    <input hide="hide" type="radio"  tab id="rTab-1" name="tab" checked="checked">
+                    <label class='grid-label' for='rTab-1'>Tab 1</label>
+                    <div flex class="tab-content">
+                        content
+                    </div>
+                    <!-- END GRID TAB 001 -->
+                    
+                    
+                    <!-- START GRID TAB 002 -->
+                    <input hide="hide" type="radio"  tab id="rTab-2" name="tab" >
+                    <label class='grid-label' for='rTab-2'>Tab 2</label>
+                    <div flex class="tab-content">
+                        content 02
+                    </div>
+                    <!-- END GRID TAB 002 -->
+                    
+                    
+                    <!-- START GRID TAB 003 -->
+                    <input hide="hide" type="radio"  tab id="rTab-3" name="tab" >
+                    <label class='grid-label' for='rTab-3'>Tab 3</label>
+                    <div flex class="tab-content">
+                        content 03
+                    </div>
+                    <!-- END GRID TAB 003 -->
+                    
+                    
+                    <!-- START GRID TAB 004 -->
+                    <input hide="hide" type="radio"  tab id="rTab-4" name="tab" >
+                    <label class='grid-label' for='rTab-4'>Tab 4</label>
+                    <div flex class="tab-content">
+                        content 04
+                    </div>
+                    <!-- END GRID TAB 004 -->
+                    
+                    
+                    <!-- START GRID TAB 005 -->
+                    <input hide="hide" type="radio"  tab id="rTab-5" name="tab" >
+                    <label class='grid-label' for='rTab-5'>Tab 5</label>
+                    <div flex class="tab-content">
+                        content 05
+                    </div>
+                    <!-- END GRID TAB 005 -->
+                    
+                    
+                    <!-- START GRID TAB 006 -->
+                    <input hide="hide" type="radio"  tab id="rTab-6" name="tab" >
+                    <label class='grid-label' for='rTab-6'>Tab 6</label>
+                    <div flex class="tab-content">
+                        
+                        
+                        
+                            <div grid class="group-tabs">
+                    
+                    
+                                    <!-- START GRID TAB 008 -->
+                                    <input hide="hide" type="radio"  tab id="rTab-8" name="tab2" checked="checked">
+                                    <label class='grid-label' for='rTab-8'>Tab 8</label>
+                                    <div flex class="tab-content">
+                                        content
+                                    </div>
+                                    <!-- END GRID TAB 008 -->
+                                    
+                                    
+                                    <!-- START GRID TAB 009 -->
+                                    <input hide="hide" type="radio"  tab id="rTab-9" name="tab2" >
+                                    <label class='grid-label' for='rTab-9'>Tab 9</label>
+                                    <div flex class="tab-content">
+                                        content 09
+                                    </div>
+                                    <!-- END GRID TAB 009 -->
+                                    
+                                    
+                                        
+                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    <!-- END GRID TAB 006 -->
+                    
+                    
+                    <!-- START GRID TAB 007 -->
+                    <input hide="hide" type="radio"  tab id="rTab-7" name="tab" >
+                    <label class='grid-label' for='rTab-7'>Tab 7</label>
+                    <div flex class="tab-content">
+                            What is Lorem Ipsum?
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            
+                           
+                    </div>
+                    <!-- END GRID TAB 007 -->
+                    
+                        
+                </div>
+                
+            </div>
+            
+          
+            
+            
+        </form>
+    </body>
+
+    <style type="text/css">
+    	body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#viagem{
+  display: flex;
+  flex: 1;
+}
+
+.wrap-form-content{
+  width: 100%;
+}
+[hide]{
+  display: none;
+}
+[grid]{
+  display: grid;
+}
+[flex]{
+  display: flex;
+}
+
+
+[grid-template-columns]{
+  
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 15px 5px;
+    grid-row-gap: 12px;
+}
+
+.field{
+  position: relative;
+}
+.field input,
+.field select, 
+.field textarea{
+  box-shadow: inset 0 0 0 1px #d8d8d8;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  font-size:14px;
+  padding: 9px;
+  border:none;
+  outline:none;
+}
+.field textarea{
+  width: 90%;
+  max-width: 90%;
+  min-width: 70%;
+  height:  50px;
+  
+  min-height: 50px;
+}
+.field label {
+  text-transform: capitalize;
+  color:#999;
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left: 10px;
+  top: 8px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all; 
+}
+
+
+.field label[fixed-label],
+.field input:focus ~ label, 
+.field textarea:focus ~ label,
+.field textarea:not(:placeholder-shown)  ~ label,
+.field input:not(:placeholder-shown) ~ label{
+  padding: 0px 6px;
+  background-color: white;
+  border-radius: 3px;
+  top: -10px;
+  font-size: 12px;
+  color: #5264AE;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0);
+}
+
+
+
+.field label[fixed-label]{
+  top: -10px;
+}
+.field [type="date"],
+.field [type="time"]{
+  
+}
+
+.field button{
+  color: #717171;
+  box-shadow: 0px 0px 0px 3px #e8e8e857, inset 0px -20px 20px -14px #00000014, inset 0 0 0px 1px #00000012;
+  border-radius: 4px;
+  padding: 7px 25px;
+  background-color: #e0e0e0;
+}
+.field button:hover,
+.field button:focus
+{
+  /* color: #ccc; */
+  color: #464646;
+  box-shadow: 0px 0px 0px 3px #335bdf57, inset 0px -20px 20px -14px #9f93ff52, inset 0px -30px 0px -29px #ffffff, inset 0 0 0px 1px #00000012;
+  border-radius: 4px;
+  padding: 7px 25px;
+  background-color: #e0e0e0;
+  text-shadow: 1px 1px 0px #ffffff94;
+}
+
+
+.group-tabs {
+  border-radius: 0 0 10px 10px;
+  grid-template-columns: repeat(10,10%);
+  /* border: 1px solid rgba(0,0,0,.2); */
+  background: #fff;
+  box-shadow: 1px 3px 3px -2px rgba(0,0,0,.1);
+}
+
+.group-tabs .tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #0000000f;
+  box-shadow: 0 0 0 0 #00000042;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.group-tabs label.grid-label {margin: 0 0 -1px;padding: 15px 25px;font-weight: 600;text-align: center;color: #bbb;border: 1px solid transparent;}
+
+.group-tabs label.grid-label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+.group-tabs label:hover {
+  color: #594db9;
+  cursor: pointer;
+}
+
+.group-tabs [tab]:checked + label.grid-label {
+  border-radius: 10px 10px 0 0;
+  color: #828282;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #888;
+  border-bottom: 1px solid #fff;
+}
+
+
+[tab]:checked + * + .tab-content {
+  display: block;
+  grid-area: 10 / 1 / 20 / span 10;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  transition: box-shadow .15s ease-in-out
+}
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px #fff, 0 0 2px 4px rgba(0, 132, 180, 0.5)
+}
+
+::-webkit-datetime-edit-text { color: #ccc; padding: 0 0.2em; }
+::-webkit-datetime-edit-month-field ,
+::-webkit-datetime-edit-day-field ,
+::-webkit-datetime-edit-year-field { color: #ccc; }
+::-webkit-inner-spin-button { display: none; }
+    </style>
+</html>
